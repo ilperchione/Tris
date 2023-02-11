@@ -21,53 +21,56 @@ cellIsOccupied = true
 		})
 	}
 
-function checkOrizzontale(){
+function checkOrizzontale(currentPlayer){
 	if(	grid[0][0] === currentPlayer && 
 		grid[0][1] === currentPlayer &&
 		grid[0][2] === currentPlayer ){
-	
+			return true;
 	}
 
-	if(	grid[1][0] === currentPlayer && 
-		grid[1][1] === currentPlayer &&
-		grid[1][2] === currentPlayer ){
-	
+	else if(grid[1][0] === currentPlayer && 
+			grid[1][1] === currentPlayer &&
+			grid[1][2] === currentPlayer ){
+				return true;
 	}
 
-	if(	grid[2][0] === currentPlayer && 
-		grid[2][1] === currentPlayer &&
-		grid[2][2] === currentPlayer ){
-	
+	else if(grid[2][0] === currentPlayer && 
+			grid[2][1] === currentPlayer &&
+			grid[2][2] === currentPlayer ){
+				return true;
 	}
 }
 
-function checkVerticale(){
+function checkVerticale(currentPlayer){
 	if(	grid[0][0] === currentPlayer && 
 		grid[1][0] === currentPlayer &&
 		grid[2][0] === currentPlayer ){
+			return true;
 	}
 
-	if(	grid[0][1] === currentPlayer && 
-		grid[1][1] === currentPlayer &&
-		grid[2][1] === currentPlayer ){
+	else if(grid[0][1] === currentPlayer && 
+			grid[1][1] === currentPlayer &&
+			grid[2][1] === currentPlayer ){
+				return true;
 	}
 
-	if(	grid[0][2] === currentPlayer && 
-		grid[1][2] === currentPlayer &&
-		grid[2][2] === currentPlayer ){
+	else if(grid[0][2] === currentPlayer && 
+			grid[1][2] === currentPlayer &&
+			grid[2][2] === currentPlayer ){
+				return true;
 	}
 }
 
-function ceckDiagonale(){
+function ceckDiagonale(currentPlayer){
 	if(	grid[0][0] === currentPlayer && 
 		grid[1][1] === currentPlayer &&
 		grid[2][2] === currentPlayer ){
-	
+			return true;
 	}
 
-	if(	grid[2][1] === currentPlayer && 
-		grid[1][1] === currentPlayer &&
-		grid[2][0] === currentPlayer ){
-	
+	else if(grid[2][1] === currentPlayer && 
+			grid[1][1] === currentPlayer &&
+			grid[2][0] === currentPlayer ){
+				return true;
 	}
 }
