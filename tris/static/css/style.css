@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+  font-family: 'Press Start 2P', cursive;
+}
+
 .player1, .player2{
   position: relative;
 }
@@ -41,7 +47,7 @@
 }
 
 .col{
-  background: green;
+  background: #06d6a0;
   border: 1px solid black;
 }
 
@@ -52,6 +58,7 @@
 }
 
 .trisGrid{
+  position: absolute;
   margin: 0;
   margin-left: 30%;
 }
@@ -60,7 +67,29 @@ h1{
   text-align: center;
 }
 
-.restart{
-  margin-top: 15px;
+.victory{
+  margin: 0;
+  background-color: rgba(242, 0, 255, 0.6);
+  position: absolute;
   text-align: center;
+  margin-left: 30%;
+  width: 605px;
+  height: 605px;
+}
+
+h2{
+  display: inline-block;
+  margin-top: 48.5%;
+  color: white;
+  text-decoration: underline;
+}
+
+.restart{
+  position: relative;
+  margin-top: 42.5%;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
 }
