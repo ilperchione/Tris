@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-*{
+* {
   font-family: 'Press Start 2P', cursive;
 }
 
-.player1, .player2{
+.player1,
+.player2 {
   position: relative;
 }
 
-.player1:before{
+.player1:before {
   content: "";
   height: 4px;
   width: 100%;
@@ -16,10 +17,10 @@
   left: 50%;
   top: 50%;
   background-color: black;
-  transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.player1:after{
+.player1:after {
   content: "";
   height: 4px;
   width: 100%;
@@ -27,10 +28,10 @@
   left: 50%;
   top: 50%;
   background-color: black;
-  transform: translate(-50%,-50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.player2:before{
+.player2:before {
   content: "";
   height: 70%;
   width: 70%;
@@ -39,35 +40,35 @@
   top: 50%;
   border: 4px solid black;
   border-radius: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.row{
+.row {
   display: flex;
 }
 
-.col{
+.col {
   background: #06d6a0;
   border: 1px solid black;
 }
 
-.gridBtn{
+.gridBtn {
   display: block;
   width: 200px;
   height: 200px;
 }
 
-.trisGrid{
+.trisGrid {
   position: absolute;
   margin: 0;
   margin-left: 30%;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-.victory{
+.victory {
   margin: 0;
   background-color: rgba(242, 0, 255, 0.6);
   position: absolute;
@@ -77,19 +78,37 @@ h1{
   height: 605px;
 }
 
-h2{
+h2 {
   display: inline-block;
   margin-top: 48.5%;
   color: white;
   text-decoration: underline;
 }
 
-.restart{
+.restart {
   position: relative;
   margin-top: 42.5%;
   text-align: center;
 }
 
-.hidden{
+button {
+  width: 120px;
+  height: 30px;
+}
+
+.hidden {
   display: none;
+}
+
+.mode button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+}
+
+.mode button{
+  margin-top: 50px;
 }
